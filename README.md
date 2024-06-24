@@ -42,6 +42,7 @@ print(wifi.sta.getip())
 先连接8266，建议大家开始研究的时候使用开发板，这样能省下很多时候时间，后期再上核心板
 
 1.首先打开刷固件工具ESP8266Flasher.exe，选择要刷入的固件
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/a58ff112-52bb-44e9-a5b0-0bda224506c8)
 
 2.点击Flash开始烧写
 
