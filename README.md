@@ -45,16 +45,20 @@ print(wifi.sta.getip())
 ![image](https://github.com/Eqarx/ESP8266/assets/65814925/a58ff112-52bb-44e9-a5b0-0bda224506c8)
 
 2.点击Flash开始烧写
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/44c7af55-f105-4273-af31-c593f43966ba)
 
 3.等待一会烧写成功，如果不成功多试几次就行了
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/cf9f062e-5b60-4064-825f-fea1f4b7ecb4)
 
 
 接下来就可以开始写程序了，程序使用Lua语言编写的，至于为啥是Lua语言，因为这个固件里边包含一个Lua语言解释器，就好比安卓上使用java语言开发应用程序。
 开始写第一个程序，最简单的就是串口输出了
 程序编辑以及烧写，使用另外一个软件ESPlorer
 1.解压ESPlorer.zip文件，得到以下东西
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/352a41d6-07c5-4da9-b49a-427d212b0bdd)
 
 2.打开 ESPlorer.bat
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/a8ac4983-ebcc-4f5d-a70e-05c5b8f1fc98)
 
 3.开始写代码，我们让8266连接手机的wifi热点，当手机提示有新的终端接入的时候，就证明代码正确执行了
 
@@ -62,10 +66,8 @@ print("start.....")
 wifi.setmode(wifi.STATION)
 wifi.sta.config("SSID","password")
 print(wifi.sta.getip())
-1
-2
-3
-4
+
+![image](https://github.com/Eqarx/ESP8266/assets/65814925/d79da290-67bc-4327-a4d3-edaf22c249f8)
 
 看到串口这边有输出 “start…..”,证明代码已经执行，等一会手机的热点应该会提示有新的设备接入了。
 这里说明一下，8266复位的时候，默认是执行init.lua这个程序，所以我们要让程序一上电就开始运行，在保存文件的时候，就要就将文件的名称的改为init.lua，这样才能实现上电就运行
@@ -73,6 +75,7 @@ print(wifi.sta.getip())
 程序怎么写？
 现在知道程序怎么写之后，就可以开始看一看这个固件的API文档了，里边有所有模块的API用法以及例子
 网址：https://nodemcu.readthedocs.io/en/master/en/modules/wifi/
+![Uploading image.png…]()
 
 
 固件的编译
